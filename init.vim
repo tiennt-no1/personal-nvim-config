@@ -2,6 +2,10 @@ let mapleader = " "
 lua require("plugins")
 lua require("custom")
 lua require('nvim_comment').setup()
+
+
+set nu
+set smartcase
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -30,5 +34,41 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fh <cmd>Telescope command_history<cr>
 
-
+" exit terminal map
 :tnoremap <C-x> <C-\><C-n>
+
+
+"
+" + toggle remap arrow keys to resize windows
+"
+nnoremap + :call ToggleResizeMode()<CR>
+
+let s:KeyResizeEnabled = 0
+
+function! ToggleResizeMode()
+  if s:KeyResizeEnabled
+    call NormalArrowKeys()
+    let s:KeyResizeEnabled = 0
+  else
+    call ResizeArrowKeys()
+    let s:KeyResizeEnabled = 1
+  endif
+endfunction
+
+function! NormalArrowKeys()
+  " unmap arrow keys
+  echo 'normal arrow keys'
+  nunmap <Up>
+  nunmap <Down>
+  nunmap <Left>
+  nunmap <Right>
+endfunction
+
+function! ResizeArrowKeys()
+  " Remap arrow keys to resize window
+  echo 'Resize window with arrow keys'
+  nnoremap <Up>    :resize +2<CR>
+  nnoremap <Down>  :resize -2<CR>
+  nnoremap <Left>  :vertical resize -2<CR>
+  nnoremap <Right> :vertical resize +2<CR>
+endfunction
