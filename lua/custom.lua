@@ -287,4 +287,6 @@ keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 
 -- leap
-require('leap').create_default_mappings()
+vim.keymap.set({'n', 'x', 'o'}, 'f',  '<Plug>(leap-forward)')
+vim.keymap.set({'n', 'x', 'o'}, 'F',  '<Plug>(leap-backward)')
+vim.keymap.set({'n', 'x', 'o'}, 'gf', '<Plug>(leap-from-window)')

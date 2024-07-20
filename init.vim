@@ -6,6 +6,8 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-s> :w<CR>
+nnoremap <C-x> :q<CR>
 
 inoremap jk <Esc>
 
@@ -27,3 +29,6 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fh <cmd>Telescope command_history<cr>
+
+
+:tnoremap <C-x> <C-\><C-n>
