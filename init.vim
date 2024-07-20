@@ -1,3 +1,4 @@
+let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 let mapleader = " "
 lua require("plugins")
 lua require("custom")
@@ -5,7 +6,7 @@ lua require('nvim_comment').setup()
 
 
 set nu
-set smartcase
+set ignorecase
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -35,7 +36,7 @@ nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fh <cmd>Telescope command_history<cr>
 
 " exit terminal map
-:tnoremap <C-x> <C-\><C-n>
+tnoremap <C-x> <C-\><C-n>
 
 
 "
@@ -72,3 +73,6 @@ function! ResizeArrowKeys()
   nnoremap <Left>  :vertical resize -2<CR>
   nnoremap <Right> :vertical resize +2<CR>
 endfunction
+
+"black
+nnoremap <M-f> :%!black - -q
