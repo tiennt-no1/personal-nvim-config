@@ -52,6 +52,11 @@ return packer.startup(function(use)
 	use ("tpope/vim-surround")
 	use ("lewis6991/gitsigns.nvim")
 	use ("NeogitOrg/neogit")
+	-- use 'jreybert/vimagit'
+	use {"neoclide/coc.nvim", branch = "release" }
+	use "vim-airline/vim-airline"
+	use 'vim-airline/vim-airline-themes'
+	use 'tpope/vim-fugitive'
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
