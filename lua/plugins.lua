@@ -57,6 +57,8 @@ return packer.startup(function(use)
 	use "vim-airline/vim-airline"
 	use 'vim-airline/vim-airline-themes'
 	use 'tpope/vim-fugitive'
+	-- use 'liangxianzhe/nap.nvim'
+	use 'ggandor/leap.nvim'
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
