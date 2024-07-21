@@ -59,6 +59,8 @@ return packer.startup(function(use)
 	use 'tpope/vim-fugitive'
 	-- use 'liangxianzhe/nap.nvim'
 	use 'ggandor/leap.nvim'
+	-- simple format 
+	use 'vim-autoformat/vim-autoformat'
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

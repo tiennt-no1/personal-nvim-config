@@ -1,7 +1,8 @@
 
 {
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true
+"pyright.enable": true,
+"python.formatting.provider": "black"
+"python.formatting.blackPath": "/home/tiennt/.local/venv/nvim/bin/black"
 }
 
 
