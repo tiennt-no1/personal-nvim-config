@@ -35,7 +35,9 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fh <cmd>Telescope command_history<cr>
+"telescope coc
 
+nnoremap <leader>ft <cmd>Telescope coc<cr>
 " exit terminal map
 tnoremap <C-/> <C-\><C-n>
 
@@ -85,3 +87,6 @@ let g:floaterm_keymap_new    = '<leader>tn'
 let g:floaterm_keymap_prev   = '<leader>to'
 let g:floaterm_keymap_next   = '<leader>ti'
 let g:floaterm_keymap_toggle = '<leader>tt'
+
+
+

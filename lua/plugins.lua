@@ -68,6 +68,7 @@ return packer.startup(function(use)
 		opts = {},
 	}
 	use "voldikss/vim-floaterm"
+	use "fannheyward/telescope-coc.nvim"
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

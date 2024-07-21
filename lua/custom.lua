@@ -290,3 +290,18 @@ keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 vim.keymap.set({'n', 'x', 'o'}, 'f',  '<Plug>(leap-forward)')
 vim.keymap.set({'n', 'x', 'o'}, 'F',  '<Plug>(leap-backward)')
 vim.keymap.set({'n', 'x', 'o'}, 'gf', '<Plug>(leap-from-window)')
+
+
+
+-- coc + telescope
+require("telescope").setup({
+  extensions = {
+    coc = {
+        theme = 'ivy',
+        prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
+        push_cursor_on_edit = true, -- save the cursor position to jump back in the future
+        timeout = 3000, -- timeout for coc commands
+    }
+  },
+})
+require('telescope').load_extension('coc')
