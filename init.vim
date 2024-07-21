@@ -37,7 +37,7 @@ nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fh <cmd>Telescope command_history<cr>
 
 " exit terminal map
-tnoremap <C-x> <C-\><C-n>
+tnoremap <C-/> <C-\><C-n>
 
 
 "
@@ -78,3 +78,10 @@ endfunction
 "load theme
 vim.cmd[[colorscheme tokyonight]]
 colorscheme tokyonight
+
+
+"floating term
+let g:floaterm_keymap_new    = '<leader>tn'
+let g:floaterm_keymap_prev   = '<leader>to'
+let g:floaterm_keymap_next   = '<leader>ti'
+let g:floaterm_keymap_toggle = '<leader>tt'

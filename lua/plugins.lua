@@ -40,33 +40,34 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-	use ("wbthomason/packer.nvim") -- Have packer manage itself	
-	use ("preservim/nerdtree")
-	use ("sheerun/vim-polyglot")
+	use("wbthomason/packer.nvim") -- Have packer manage itself	
+	use("preservim/nerdtree")
+	use("sheerun/vim-polyglot")
 	use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.8',
--- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
-	use ("terrortylor/nvim-comment")
-	use ("tpope/vim-surround")
-	use ("lewis6991/gitsigns.nvim")
-	use ("NeogitOrg/neogit")
+		'nvim-telescope/telescope.nvim', tag = '0.1.8',
+		-- or                            , branch = '0.1.x',
+		requires = { { 'nvim-lua/plenary.nvim' } }
+	}
+	use("terrortylor/nvim-comment")
+	use("tpope/vim-surround")
+	use("lewis6991/gitsigns.nvim")
+	use("NeogitOrg/neogit")
 	-- use 'jreybert/vimagit'
-	use {"neoclide/coc.nvim", branch = "release" }
+	use { "neoclide/coc.nvim", branch = "release" }
 	use "vim-airline/vim-airline"
 	use 'vim-airline/vim-airline-themes'
 	use 'tpope/vim-fugitive'
 	-- use 'liangxianzhe/nap.nvim'
 	use 'ggandor/leap.nvim'
-	-- simple format 
+	-- simple format
 	use 'vim-autoformat/vim-autoformat'
 	use {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-}
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	}
+	use "voldikss/vim-floaterm"
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
