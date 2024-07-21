@@ -61,6 +61,12 @@ return packer.startup(function(use)
 	use 'ggandor/leap.nvim'
 	-- simple format 
 	use 'vim-autoformat/vim-autoformat'
+	use {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+}
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

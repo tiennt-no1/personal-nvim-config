@@ -13,6 +13,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-x> :q<CR>
+nnoremap <C-q> :q!<CR>
 
 inoremap jk <Esc>
 
@@ -74,5 +75,6 @@ function! ResizeArrowKeys()
   nnoremap <Right> :vertical resize +2<CR>
 endfunction
 
-"black
-nnoremap <M-f> :%!black - -q
+"load theme
+vim.cmd[[colorscheme tokyonight]]
+colorscheme tokyonight
