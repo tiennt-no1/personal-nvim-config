@@ -1,3 +1,4 @@
+
 -- git sign 
 require('gitsigns').setup {
   signs = {
@@ -93,10 +94,6 @@ require('gitsigns').setup {
     map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
 }
-
--- neogit 
-local neogit = require('neogit')
-neogit.setup {}
 
 -- coc lsp 
 -- https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.lua

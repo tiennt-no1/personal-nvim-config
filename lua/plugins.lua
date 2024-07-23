@@ -52,11 +52,12 @@ return packer.startup(function(use)
 	use("tpope/vim-surround")
 	use("lewis6991/gitsigns.nvim")
 	use("NeogitOrg/neogit")
+	use "sindrets/diffview.nvim"
 	-- use 'jreybert/vimagit'
 	use { "neoclide/coc.nvim", branch = "release" }
 	use "vim-airline/vim-airline"
 	use 'vim-airline/vim-airline-themes'
-	use 'tpope/vim-fugitive'
+	-- use 'tpope/vim-fugitive'
 	-- use 'liangxianzhe/nap.nvim'
 	use 'ggandor/leap.nvim'
 	-- simple format

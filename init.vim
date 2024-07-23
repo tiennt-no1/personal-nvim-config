@@ -1,3 +1,4 @@
+lua require("config")
 let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 let mapleader = " "
 lua require("plugins")
@@ -78,7 +79,7 @@ function! ResizeArrowKeys()
 endfunction
 
 "load theme
-vim.cmd[[colorscheme tokyonight]]
+" vim.cmd[[colorscheme tokyonight]]
 colorscheme tokyonight
 
 
@@ -89,4 +90,4 @@ let g:floaterm_keymap_next   = '<leader>ti'
 let g:floaterm_keymap_toggle = '<leader>tt'
 
 
-
+nnoremap <silent> <Leader><Leader> :source ~/.config/nvim/init.vim<cr>
