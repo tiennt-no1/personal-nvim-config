@@ -24,6 +24,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 nnoremap <C-a> ggVG
 
+nnoremap <S-Tab> :bpre<cr>
+nnoremap <Tab> :bnext<cr>
 
 autocmd BufEnter * set indentexpr=
 
@@ -39,9 +41,10 @@ nnoremap <leader>fh <cmd>Telescope command_history<cr>
 "telescope coc
 
 nnoremap <leader>ft <cmd>Telescope coc<cr>
+nnoremap <A-j> <cmd>Term<cr>
 " exit terminal map
-tnoremap <C-/> <C-\><C-n>
-
+tnoremap <Esc> <C-\><C-n>
+tnoremap <c-x> <C-\><C-n>
 
 "
 " + toggle remap arrow keys to resize windows
@@ -91,3 +94,8 @@ let g:floaterm_keymap_toggle = '<leader>tt'
 
 
 nnoremap <silent> <Leader><Leader> :source ~/.config/nvim/init.vim<cr>
+
+
+" split term
+set splitright
+set splitbelow

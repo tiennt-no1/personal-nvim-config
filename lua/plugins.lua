@@ -68,8 +68,10 @@ return packer.startup(function(use)
 		priority = 1000,
 		opts = {},
 	}
-	use "voldikss/vim-floaterm"
+	-- use "voldikss/vim-floaterm"
 	use "fannheyward/telescope-coc.nvim"
+	use 'vimlab/split-term.vim'
+	-- use "pseewald/vim-anyfold"
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
