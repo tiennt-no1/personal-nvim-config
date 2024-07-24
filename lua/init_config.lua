@@ -1,7 +1,6 @@
 local neogit = require('neogit')
 neogit.setup {}
 
-
 -- git sign
 require('gitsigns').setup {
   signs                        = {

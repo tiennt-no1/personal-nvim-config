@@ -1,5 +1,5 @@
-lua require("config")
-let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
+let g:python3_host_prog = expand('/export/scratch/ven_tinguyen/apps/anaconda3/py310/bin/python')
+lua require("init_config")
 let mapleader = " "
 lua require("plugins")
 lua require("custom")
@@ -85,12 +85,6 @@ endfunction
 " vim.cmd[[colorscheme tokyonight]]
 colorscheme tokyonight
 
-
-"floating term
-let g:floaterm_keymap_new    = '<leader>tn'
-let g:floaterm_keymap_prev   = '<leader>to'
-let g:floaterm_keymap_next   = '<leader>ti'
-let g:floaterm_keymap_toggle = '<leader>tt'
 
 
 nnoremap <silent> <Leader><Leader> :source ~/.config/nvim/init.vim<cr>

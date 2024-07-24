@@ -3,7 +3,6 @@
 // python
 "pyright.enable": true,
 "python.formatting.provider": "black",
-"python.formatting.blackPath": "/home/tiennt/.local/venv/nvim/bin/black",
 //eslint 
 "eslint.enable": true,
 "eslint.autoFixOnSave": true,
