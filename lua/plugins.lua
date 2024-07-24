@@ -51,7 +51,7 @@ return packer.startup(function(use)
 	use("terrortylor/nvim-comment")
 	use("tpope/vim-surround")
 	use("lewis6991/gitsigns.nvim")
-	use "NeogitOrg/neogit"
+	use { "NeogitOrg/neogit", tag="v0.0.1" }
 	use "sindrets/diffview.nvim"
 	-- use 'jreybert/vimagit'
 	use { "neoclide/coc.nvim", branch = "release" }
